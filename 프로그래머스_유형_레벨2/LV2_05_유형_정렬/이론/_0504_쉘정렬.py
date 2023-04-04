@@ -1,4 +1,5 @@
 # https://travelbeeee.tistory.com/215
+# n^1.5
 
 def shell_sort(arr):
     gap = len(arr)

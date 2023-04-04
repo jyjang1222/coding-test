@@ -1,4 +1,5 @@
 # https://heytech.tistory.com/57
+# 속도 n^2
 
 def selection_sort(a):
     for i in range(len(a)):

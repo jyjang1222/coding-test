@@ -1,3 +1,4 @@
+# nlogn
 
 a = {"aAa" , "bb" , "CCCCC" , "DD" , "ee"}
 a = sorted(a , key=lambda x: (len(x) , x.upper()))

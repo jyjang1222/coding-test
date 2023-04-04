@@ -1,4 +1,5 @@
 # https://seong6496.tistory.com/381
+# n^2
 
 def bubble_sort(arr):
     for i in range(len(arr)):

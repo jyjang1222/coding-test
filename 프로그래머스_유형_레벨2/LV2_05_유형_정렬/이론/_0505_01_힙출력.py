@@ -1,3 +1,4 @@
+# nlogn
 
 def heap_print(a):
     for i in range(1, len(a)):

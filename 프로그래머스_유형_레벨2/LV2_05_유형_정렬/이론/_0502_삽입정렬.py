@@ -1,5 +1,5 @@
 # https://jinyes-tistory.tistory.com/30
-
+# n^2 중 속도가 가장 빠르다
 
 
 def insert_sort(arr):
