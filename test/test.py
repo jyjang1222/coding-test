@@ -20,28 +20,46 @@ while size > 1:
     for j in range(loop1):
         for k in range(loop2):
             chk = True
-            idx = size - 1 + j*col + k
+            idx1 = size - 1 + j*col + k
+            idx2 = idx1
+            idx3 = idx1+(col*(2*(size)-2))
+            idx4 = idx3
             if chk:
-                for m in range(size - 1):
-                    if map[idx] == '0':
+                for m in range(size):
+                    print(idx1,idx2,idx3,idx4,m)
+                    if map[idx1] == '0' or map[idx2] == '0' or map[idx3] == '0' or map[idx4] == '0':
                         chk = False
                         break
-                    idx += num1
-                for m in range(size - 1):
-                    if map[idx] == '0':
-                        chk = False
-                        break
-                    idx += num2
-                for m in range(size - 1):
-                    if map[idx] == '0':
-                        chk = False
-                        break
-                    idx -= num1
-                for m in range(size - 1):
-                    if map[idx] == '0':
-                        chk = False
-                        break
-                    idx -= num2
+                    idx1 += num1
+                    idx2 += num2
+                    idx3 -= num1
+                    idx4 -= num2
+                # for m in range(size):
+                #     # print(idx1,idx2,m)
+                #     if map[idx1] == '0' or map[idx2] == '0':
+                #         chk = False
+                #         break
+                #     idx1 += num2
+                #     idx2 += num1
+                # 7 7
+                # 0001000
+                # 0010100
+                # 0100010
+                # 1000001
+                # 0100010
+                # 0010101
+                # 0000010
+                # 4
+                # for m in range(size - 1):
+                #     if map[idx] == '0':
+                #         chk = False
+                #         break
+                #     idx -= num1
+                # for m in range(size - 1):
+                #     if map[idx] == '0':
+                #         chk = False
+                #         break
+                #     idx -= num2
             if chk:
                 break
         if chk:
@@ -76,7 +94,7 @@ print(size)
 # 0000
 # 0100  5
 # 1010 8 10
-# 0100  13
+# 0100  13   row
 
 # size 3  6 4
 #    2 
