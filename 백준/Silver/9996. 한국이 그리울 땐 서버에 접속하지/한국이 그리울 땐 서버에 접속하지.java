@@ -21,14 +21,8 @@ public class Main {
     		String fileName = scan.nextLine();
     		int fileNameLen = fileName.length();
     		int startIdx = (fileName.length() - 1) - (endPatternLen - 1); 
-
-    		// 파일이름 길이가 패턴길이보다 작을 경우
-    		if (startPatternLen > fileNameLen || endPatternLen > fileNameLen) {
-    			System.out.println(res);
-    			continue;
-    		}
     		
-    		// 앞뒤패턴이 같을 경우 a*a a, aaa*a aaa
+    		// 파일이름 길이가 패턴길이보다 작을 경우
     		if (patternLen > fileNameLen) {
     			System.out.println(res);
     			continue;
@@ -44,5 +38,6 @@ public class Main {
     		System.out.println(res);
     	}
     	
+    	scan.close();
     }
 }
