@@ -6,9 +6,9 @@ public class Main {
     	
     	String temp = scan.nextLine();
     	
-    	int A = scan.nextInt();
-    	int B = scan.nextInt();
-    	int res = A * B;
+    	long A = scan.nextLong();
+    	long B = scan.nextLong();
+    	long res = A * B;
     	
     	System.out.println(res);
     	
