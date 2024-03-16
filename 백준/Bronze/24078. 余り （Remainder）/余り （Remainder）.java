@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class Main {
 	
-	public static int Divide(int x, int num) {
+	public static int divide(int x, int num) {
 		int subtractResult = x - num;
 		
 		if (subtractResult > 0) {
-			return Divide(subtractResult, num);		
+			return divide(subtractResult, num);		
 		} else if (subtractResult == 0) {
 			return subtractResult;
 		}
@@ -20,9 +20,9 @@ public class Main {
 		int X = scan.nextInt();
 		final int NUM = 21;
 		
-		int res = Main.Divide(X, NUM);
+		int result = divide(X, NUM);
 		
-		System.out.println(res);
+		System.out.println(result);
 		
 		scan.close();
 	}
